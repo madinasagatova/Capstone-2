@@ -1,0 +1,54 @@
+.top-container{
+    background-color: #FFF5F2;
+    position: relative;
+    padding-top: 100px;
+    min-height: 90vh;
+}
+.top-butterflies{
+    position: absolute;
+    left: 0px;
+    top: 0px;   
+    width: 150px;
+}
+.cup-with-butterfly {
+    width: 458px;
+    height: auto;
+    bottom: 100px;
+    top: 2px;
+    right: 150px;
+    position: absolute;
+}
+h1 {
+    color: #14213D;
+    font-family: Snell Roundhand, cursive;
+    font-size: 4.6rem;
+    margin: 50px auto 0 auto;
+    display: block;
+    margin-block-start: 0.68em;
+    margin-block-end: 0.18em;
+    margin-inline-start: 0px;
+    margin-inline-end: 300px;
+    font-weight: bold;
+    padding-top: 90px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+h2 {
+    color: #14213D;
+    font-size: 2.5rem;
+    font-weight: normal;
+    padding-bottom: 10px;
+    font-family:Optima, sans-serif;
+    height: 46px;
+    display: block;
+    margin-block-start: 0.13em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 300px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+.text-title {
+    text-align: center;
+}
+.pro {
+text-decoration: underline;
+}
