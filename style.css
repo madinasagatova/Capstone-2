@@ -32,7 +32,7 @@ h1 {
     padding-top: 90px;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
 }
-h2 {
+.h2-containertop {
     color: #14213D;
     font-size: 2.5rem;
     font-weight: normal;
@@ -51,4 +51,26 @@ h2 {
 }
 .pro {
 text-decoration: underline;
+}
+.middle-container {
+margin: 100px 0;
+}
+img {
+    height: 200px;
+    width: 200px;
+    display: block;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 20px;       /* Centers and adds space below */
+    object-position: 50% 20%;
+}
+body {
+    text-align: center;
+}
+h2 {
+    color: #14213D;
+    font-family:Optima, sans-serif;
+    font-size: 2.5rem;
+    font-weight: normal;
+    padding-bottom: 10px;
 }
