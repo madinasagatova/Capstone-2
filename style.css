@@ -127,7 +127,7 @@ margin: auto;
 }
 
 /* Copy */
-.skill-copy h3 {
+h3 {
   color: #14213D;                     
   font-family: Optima, sans-serif;
   font-weight: 700;
@@ -149,5 +149,18 @@ margin: auto;
   }
   .skill-copy { text-align: center; }
   .skill-img { width: 80%; height: auto; }
+}
+.btn {
+  display: inline-block;
+  background-color: #14213D;
+  color: white;
+  text-decoration: none;
+  padding: 12px 30px;
+  border-radius: 8px;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+.btn:hover {
+  background-color: #C2E2FA;
 }
 
