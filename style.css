@@ -1,3 +1,8 @@
+
+body { 
+    text-align: center; 
+}
+
 .top-container{
     background-color: #C2E2FA;
     position: relative;
@@ -59,7 +64,6 @@ img {
     height: 200px;
     width: 200px;
     display: block;
-    border-radius: 50%;
     object-fit: cover;
     margin: 0 auto 20px;       /* Centers and adds space below */
     object-position: 50% 20%;
@@ -73,9 +77,10 @@ body {
     font-size: 2.5rem;
     font-weight: normal;
     padding-bottom: 10px;
+    border-radius: 50%;
 }
 hr {
-border: dotted #eaf6f6 6px;
+border: dotted #C2E2FA 6px;
 border-bottom: none;
 width: 4%;
 margin: 100px auto;
@@ -93,3 +98,56 @@ p {
 width: 30%;
 margin: auto;
 }
+
+* Section title */
+.section-title {
+  margin: 0 auto 1rem;
+  text-align: center;
+}
+
+/* Layout for each row */
+.skill-row {
+  display: grid;
+  grid-template-columns: 240px 1fr;   
+  gap: 1.5rem 2rem;
+  align-items: center;
+  width: min(950px, 90%);
+  margin: 3rem auto;                  
+  text-align: left;                   
+}
+
+/* Image */
+.skill-img {
+  width: 240px;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+  border-radius: 6px;
+  justify-self: center;               
+}
+
+/* Copy */
+.skill-copy h3 {
+  color: #14213D;                     
+  font-family: Optima, sans-serif;
+  font-weight: 700;
+  font-size: 1.6rem;
+  margin: 0 0 .5rem 0;
+}
+
+.skill-copy p {
+  margin: 0;
+  line-height: 1.8;
+  max-width: 60ch;                    
+}
+
+/* Mobile: stack vertically */
+@media (max-width: 760px) {
+  .skill-row {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .skill-copy { text-align: center; }
+  .skill-img { width: 80%; height: auto; }
+}
+
