@@ -163,4 +163,19 @@ h3 {
 .btn:hover {
   background-color: #C2E2FA;
 }
+.bottom-container {
+    background-color: #C2E2FA;
+    padding: 50px 0 20px;
+}
+a {
+    color: #14213D;
+    font-family: Optima, sans-serif;
+    margin: 10px 20px;
+    text-decoration: none;
+}
+.copyright {
+    color: white;
+    padding: 20px 0;
+    font-size: 0.95rem;
+}
 
