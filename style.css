@@ -1,5 +1,5 @@
 .top-container{
-    background-color: #FFF5F2;
+    background-color: #C2E2FA;
     position: relative;
     padding-top: 100px;
     min-height: 90vh;
@@ -73,4 +73,23 @@ body {
     font-size: 2.5rem;
     font-weight: normal;
     padding-bottom: 10px;
+}
+hr {
+border: dotted #eaf6f6 6px;
+border-bottom: none;
+width: 4%;
+margin: 100px auto;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    line-height: 2;
+}
+.intro {
+width: 30%;
+margin: auto;
 }
