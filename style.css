@@ -6,8 +6,8 @@ body {
 .top-container{
     background-color: #C2E2FA;
     position: relative;
-    padding-top: 100px;
-    min-height: 90vh;
+    padding-top: 150px;
+    min-height: 80vh;
 }
 .top-butterflies{
     position: absolute;
@@ -15,42 +15,37 @@ body {
     top: 0px;   
     width: 150px;
 }
-.cup-with-butterfly {
-    width: 458px;
-    height: auto;
-    bottom: 100px;
-    top: 2px;
-    right: 150px;
-    position: absolute;
+
+.cup-with-butterfly{
+  position: absolute;
+  top: .75rem;
+  right: 5vw;
+  width: min(42vw, 360px);  
+  height: auto;
+  bottom: auto;             
 }
 h1 {
     color: #14213D;
     font-family: Snell Roundhand, cursive;
-    font-size: 4.6rem;
-    margin: 50px auto 0 auto;
+    font-size: clamp(2rem, 6vw, 4.6rem);
     display: block;
-    margin-block-start: 0.68em;
-    margin-block-end: 0.18em;
-    margin-inline-start: 0px;
-    margin-inline-end: 300px;
+    margin: 0 auto .20em auto !important;
     font-weight: bold;
-    padding-top: 90px;
+    padding-top: 1rem;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
 }
 .h2-containertop {
     color: #14213D;
     font-size: 2.5rem;
-    font-weight: normal;
+    font-size: clamp(1.1rem, 3.5vw, 2.5rem);
     padding-bottom: 10px;
     font-family:Optima, sans-serif;
-    height: 46px;
+    height: auto;
     display: block;
-    margin-block-start: 0.13em;
-    margin-block-end: 0.83em;
-    margin-inline-start: 0px;
-    margin-inline-end: 300px;
+    margin: 0 auto .20rem auto !important;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
 }
+
 .text-title {
     text-align: center;
 }
@@ -92,9 +87,12 @@ p {
     margin-inline-end: 0px;
     line-height: 2;
 }
-.intro {
-width: 30%;
-margin: auto;
+.intro{
+  max-width: 60ch;
+  width: auto;
+  padding: 0 1rem;
+  margin: 0 auto;
+  line-height: 1.8;
 }
 
 * Section title */
@@ -140,14 +138,20 @@ h3 {
 }
 
 /* Mobile: stack vertically */
-@media (max-width: 760px) {
-  .skill-row {
-    grid-template-columns: 1fr;
-    text-align: center;
+@media (max-width: 768px){
+  .top-container{ min-height: 52vh; padding-top: 100px; }
+  .cup-with-butterfly{
+    width: min(55vw, 230px);
+    right: 2vw;
+    top: .5rem;
+    opacity: .95;
   }
-  .skill-copy { text-align: center; }
-  .skill-img { width: 80%; height: auto; }
 }
+
+@media (max-width: 420px){
+  .cup-with-butterfly{ display: none; } /* optional: hide on very small phones */
+}
+@media (max-width: 760px) { .skill-row { grid-template-columns: 1fr; text-align: center; } .skill-copy { text-align: center; } .skill-img { width: 80%; height: auto; } }
 .btn {
   display: inline-block;
   background-color: #14213D;
