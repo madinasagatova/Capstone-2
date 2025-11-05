@@ -22,6 +22,7 @@ A simple, responsive personal site built with **HTML + CSS** (no JavaScript) to 
 ---
 
 ## 📂 Project Structure
+
 Capstone-2/
 ├── index.html
 ├── style.css
@@ -29,7 +30,7 @@ Capstone-2/
 │ ├── madina-profile.png
 │ └── other-images...
 ├── assets/
-│ └── preview.png 
+│ └── preview.png
 └── README.md
 
 ---
